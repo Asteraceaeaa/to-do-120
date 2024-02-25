@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="conatiner">
+    <!-- {% include 'header.html' %} -->
+    <main class="main" id="main">
+      <h1 class="main__title">Регистрация для:</h1>
+      <ul class="main__forms">
+        <li class="main__forms-var">
+          <a href="{%url 'reg_student' %}" class="main__forms-link">Учащихся</a>
+        </li>
+        <li class="main__forms-var">
+          <a href="{%url 'reg_educator' %}" class="main__forms-link">Учителей</a>
+        </li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
